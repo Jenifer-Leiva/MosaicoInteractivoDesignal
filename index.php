@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Mosaico Interactivo - Diseño III</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,10 +17,16 @@
         <h1>UNIVERSIDAD MILITAR NUEVA GRANADA</h1>
         <h2>DISEÑO III</h2>
     </header>
+        
+    
 
     <main id="mosaico">
+        <div class="circulo-centro">
+            <img src="Recursos/Logo_Blanco" alt="Logo UMNG">
+        </div>
+        
         <?php
-        include('db/conexion.php');
+        include('conexion.php');
         $query = "SELECT * FROM ModuloEst";
         $resultado = $conn->query($query);
 
@@ -24,7 +34,7 @@
             while ($row = $resultado->fetch_assoc()) {
                 echo "
                 <div class='modulo' data-id='{$row['id']}'>
-                    <img src='img/uploads/{$row['foto']}' alt='{$row['nombre']}'>
+                    <img src='Fotos/{$row['foto']}' alt='{$row['nombre']}'>
                 </div>";
             }
         } else {
