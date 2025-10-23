@@ -9,6 +9,7 @@
 
     <title>Mosaico Interactivo - Diseño III</title>
     <link rel="stylesheet" href="index.css">
+    <script src="Funcionamientos.js"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -24,7 +25,6 @@
         <div class="circulo-centro">
             <img src="Recursos/Logo_Blanco" alt="Logo UMNG">
         </div>
-        
         <?php
         include('conexion.php');
         $query = "SELECT * FROM ModuloEst";
@@ -42,15 +42,23 @@
         }
         ?>
     </main>
+            <!-- Modal del estudiante -->
+        <div id="modal-estudiante" class="modal">
+            <div class="modal-content">
+                <span class="cerrar">&times;</span>
+                <div class="contenido-modal">
+                    <video id="video-estudiante" controls></video>
+                    <div class="info-estudiante">
+                        <img src="Recursos/LOGO_UMNG" alt="Logo UMNG" class="logo-umng">
+                        <h2 id="nombre-estudiante"></h2>
+                        <h3>INGENIERÍA EN MULTIMEDIA - DISEÑO III</h3>
+                        <p id="frase-estudiante"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script>
-    // Placeholder para el futuro (interacción al hacer click)
-    document.querySelectorAll('.modulo').forEach(m => {
-        m.addEventListener('click', () => {
-            const nombre = m.querySelector('img').alt;
-            alert(`Has seleccionado a ${nombre}`);
-        });
-    });
-    </script>
+
+    
 </body>
 </html>
