@@ -18,8 +18,6 @@
         <h1>UNIVERSIDAD MILITAR NUEVA GRANADA</h1>
         <h2>DISEÑO III</h2>
     </header>
-        
-    
 
     <main id="mosaico">
         <div class="circulo-centro">
@@ -42,23 +40,28 @@
         }
         ?>
     </main>
-            <!-- Modal del estudiante -->
-        <div id="modal-estudiante" class="modal">
-            <div class="modal-content">
-                <span class="cerrar">&times;</span>
-                <div class="contenido-modal">
-                    <video id="video-estudiante" controls></video>
-                    <div class="info-estudiante">
-                        <img src="Recursos/LOGO_UMNG" alt="Logo UMNG" class="logo-umng">
-                        <h2 id="nombre-estudiante"></h2>
-                        <h3>INGENIERÍA EN MULTIMEDIA - DISEÑO III</h3>
-                        <p id="frase-estudiante"></p>
-                    </div>
+
+    <!-- Modal del estudiante -->
+    <div id="modal-estudiante" class="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <div class="contenido-modal">
+                <video id="video-estudiante" controls></video>
+                <div class="info-estudiante">
+                    <img src="Recursos/LOGO_UMNG" alt="Logo UMNG" class="logo-umng">
+                    <h2 id="nombre-estudiante"></h2>
+                    <h3>INGENIERÍA EN MULTIMEDIA - DISEÑO III</h3>
+                    <p id="frase-estudiante"></p>
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- 🔸 Botones de navegación inferiores -->
+    <div class="botones-inferiores">
+        <a href="index2.php" class="btn-inferior izquierda">Página 2</a>
+        <a href="index3.php" class="btn-inferior derecha">Página 3</a>
+    </div>
 
-    
 </body>
 </html>
