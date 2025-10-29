@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Mosaico Interactivo - Diseño III</title>
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="Segunda.css">
     <script src="Funcionamientos.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
     <main id="mosaico">
         <div class="circulo-centro">
-            <img src="Recursos/Logo_Blanco.png" alt="Logo UMNG">
+            <img src="Recursos/Logo_Oscuro.png" alt="Logo UMNG">
         </div>
         <?php
         include('conexion.php');
@@ -59,8 +59,8 @@
 
     <!-- 🔸 Botones de navegación inferiores -->
     <div class="botones-inferiores">
-        <button onclick="window.location.href='index2.php'">Estilo 1</button>
-        <button onclick="window.location.href='index3.php'">Estilo 3</button>
+        <button onclick="window.location.href='index.php'">Estilo 1</button>
+        <button onclick="window.location.href='Tercera.php'">Estilo 3</button>
     </div>
 
 </body>

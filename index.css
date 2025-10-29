@@ -52,6 +52,7 @@ header h2 {
   gap: 25px;
   padding: 50px;
   justify-items: center;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
