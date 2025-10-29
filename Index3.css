@@ -19,7 +19,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('Recursos/Campus2.png') no-repeat center center fixed;
+    background: url('Recursos/Calle100_2.png') no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
     filter: brightness(0.75);
@@ -110,7 +110,7 @@ header h2 {
 /* === Círculo rojo con el logo UMNG === */
 
 .circulo-centro {
-    background-color: #b50000;
+    background-color: #00154f;
     border-radius: 50%;
     width: clamp(200px, 20vw, 200px);
     height: clamp(200px, 20vw, 200px);
@@ -153,7 +153,7 @@ header h2 {
 }
 
 .modal-content {
-    background-color:  #7A2626; /* rojo institucional */
+    background-color:  #d8d403; /* rojo institucional */
     border-radius: 20px;
     padding: 30px;
     width: 150%;
@@ -200,7 +200,7 @@ header h2 {
     right: 15px;
     font-size: 30px;
     cursor: pointer;
-    color: #FFD700;
+    color: #7e0f18;
     transition: 0.2s;
 }
 
@@ -208,6 +208,7 @@ header h2 {
     color: white;
     transform: scale(1.2);
 }
+
 
 .botones-superior {
   position: absolute;
@@ -219,8 +220,8 @@ header h2 {
 }
 
 .botones-superior button {
-  background-color: #FFD700; /* amarillo */
-  color: #7A2626; /* rojo institucional */
+  background-color: #ffffff; /* amarillo */
+  color: #000000; /* rojo institucional */
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
@@ -231,10 +232,11 @@ header h2 {
 }
 
 .botones-superior button:hover {
-  background-color: #ffea00;
+  background-color: #bebfc2;
   transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 0 8px rgba(5, 182, 226, 0.6);
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
