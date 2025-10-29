@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Natachita.16"; // sin contraseña por defecto
-$dbname = "mosaicointeractivo";
+$password = ""; // sin contraseña por defecto
+$dbname = "masaicointeractivo";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

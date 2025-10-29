@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Mosaico Interactivo - Diseño III</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
     <script src="Funcionamientos.js"></script>
 </head>
 <body>
@@ -59,8 +59,8 @@
 
     <!-- 🔸 Botones de navegación inferiores -->
     <div class="botones-inferiores">
-        <button onclick="window.location.href='index2.php'">Estilo 3</button>
-        <button onclick="window.location.href='index3.php'">Estilo 2</button>
+        <button onclick="window.location.href='index2.php'">Estilo 1</button>
+        <button onclick="window.location.href='index3.php'">Estilo 3</button>
     </div>
 
 </body>
