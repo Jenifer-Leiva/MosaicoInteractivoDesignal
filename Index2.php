@@ -59,8 +59,8 @@
 
     <!-- 🔸 Botones de navegación inferiores -->
     <div class="botones-inferiores">
-        <button onclick="window.location.href='index2.php'">Estilo 1</button>
-        <button onclick="window.location.href='index3.php'">Estilo 3</button>
+        <button onclick="window.location.href='index.php'">Estilo 1</button>
+        <button onclick="window.location.href='Index3.php'">Estilo 3</button>
     </div>
 
 </body>

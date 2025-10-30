@@ -21,7 +21,7 @@
 
     <main id="mosaico">
         <div class="circulo-centro">
-            <img src="Recursos/Logo_Blanco.png" alt="Logo UMNG">
+            <img src="Recursos/Logo_Oscuro.png" alt="Logo UMNG">
         </div>
         <?php
         include('conexion.php');
@@ -48,7 +48,7 @@
             <div class="contenido-modal">
                 <video id="video-estudiante" controls></video>
                 <div class="info-estudiante">
-                    <img src="Recursos/Logo_Oscuro.png" alt="Logo UMNG" class="logo-umng">
+                    <img src="Recursos/LOGO_UMNG.png" alt="Logo UMNG" class="logo-umng">
                     <h2 id="nombre-estudiante"></h2>
                     <h3>INGENIERÍA EN MULTIMEDIA - DISEÑO III</h3>
                     <p id="frase-estudiante"></p>
@@ -59,8 +59,8 @@
 
     <!-- 🔸 Botones de navegación inferiores -->
     <div class="botones-inferiores">
-        <button onclick="window.location.href='index2.php'">Estilo 2</button>
-        <button onclick="window.location.href='index3.php'">Estilo 1</button>
+        <button onclick="window.location.href='Index2.php'">Estilo 2</button>
+        <button onclick="window.location.href='index.php'">Estilo 1</button>
     </div>
 
 </body>
