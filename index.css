@@ -47,12 +47,14 @@ header h2 {
 /* === Mosaico (Grid) === */
 #mosaico {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 25px;
-    padding: 50px;
-    justify-items: center;
-    align-items: center;
-    position: relative;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 25px;
+  padding: 50px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* === Módulo del estudiante === */
@@ -98,10 +100,7 @@ header h2 {
     header h2 {
         font-size: 1.2rem;
     }
-    #mosaico {
-        padding: 20px;
-        gap: 15px;
-    }
+   
     .modulo {
         width: 130px;
         height: 160px;
@@ -110,33 +109,37 @@ header h2 {
 /* === Círculo rojo con el logo UMNG === */
 
 .circulo-centro {
-    background-color: #b50000;
-    border-radius: 50%;
-    width: clamp(200px, 20vw, 200px);
-    height: clamp(200px, 20vw, 200px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2 / span 2; /* lo centra en el grid */
-    grid-row: 2 / span 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 0;
+       background-color: #b50000;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4 / span 1;  /* ← columna 4 (la del centro) */
+  grid-row: 2 / span 1;     /* ← fila 2 (fila del medio) */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
-
 .circulo-centro img {
-    width: 60%;
-    height: auto;
-    user-select: none;
+  width: 60%;
+  height: auto;
+  user-select: none;
 }
 
-/* Ajustes específicos para móviles */
-@media (max-width: 768px) {
-    .circulo-centro {
-        width: 30vw;
-        height: 30vw;
-        max-width: 150px;
-        max-height: 150px;
-    }
+
+
+/* === Responsividad === */
+@media (max-width: 992px) {
+  #mosaico {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .circulo-centro {
+    grid-column: 2;
+    grid-row: 2;
+    width: 150px;
+    height: 150px;
+  }
 }
 /* === Modal de estudiante === */
 .modal {
