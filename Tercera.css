@@ -60,7 +60,7 @@ header h2 {
 .modulo {
     width: 160px;
     height: 200px;
-    border: 8px solid #FFD700;
+    border: 8px solid #0841DD;
     border-radius: 12px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1);
@@ -108,17 +108,17 @@ header h2 {
 /* === Círculo rojo con el logo UMNG === */
 
 .circulo-centro {
-  background-color: #b50000;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 4 / span 1;  /* ← columna 4 (la del centro) */
-  grid-row: 2 / span 1;     /* ← fila 2 (fila del medio) */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+    background-color: #b50000;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4 / span 1;  /* ← columna 4 (la del centro) */
+    grid-row: 2 / span 1;     /* ← fila 2 (fila del medio) */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .circulo-centro img {
@@ -156,12 +156,12 @@ header h2 {
 }
 
 .modal-content {
-    background-color:  #d8d403; /* rojo institucional */
+    background-color:  #ffffff; /* rojo institucional */
     border-radius: 20px;
     padding: 30px;
     width: 150%;
     max-width: 700px;
-    color: white;
+    color: rgb(0,0,0);
     position: relative;
     display: flex;
     flex-direction: column;

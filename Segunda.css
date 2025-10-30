@@ -176,7 +176,7 @@ header h2 {
     padding: 30px;
     width: 150%;
     max-width: 700px;
-    color: white;
+    color: rgb(0,0,0);
     position: relative;
     display: flex;
     flex-direction: column;
